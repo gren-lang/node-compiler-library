@@ -1,9 +1,11 @@
 {
-  "name": "gren",
+  "name": "gren-lang",
   "version": "0.1.0",
   "description": "The Gren compiler",
   "type": "module",
-  "bin": "index.js",
+  "bin": {
+      "gren": "index.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
