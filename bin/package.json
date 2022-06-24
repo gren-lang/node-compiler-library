@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/gren-lang/npm.git"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "gren"
   ],
