@@ -1,0 +1,26 @@
+{
+  "name": "gren",
+  "version": "0.1.0",
+  "description": "The Gren compiler",
+  "type": "module",
+  "bin": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gren-lang/npm.git"
+  },
+  "keywords": [
+    "gren"
+  ],
+  "author": "Robin Heggelund Hansen",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/gren-lang/npm/issues"
+  },
+  "homepage": "https://github.com/gren-lang/npm#readme",
+  "dependencies": {
+    "gren-compiler-library": "file:../lib/"
+  }
+}
