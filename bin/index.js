@@ -1,5 +1,25 @@
 #!/usr/bin/env node
 
 import * as gren from 'gren-compiler-library'
+import * as childProcess from 'child_process'
+import * as process from 'process'
+import * as util from 'util'
 
-gren.downloadCompiler();
+async function run() {
+    try {
+        await gren.downloadCompiler();
+        const args = process.argv.slice(2);
+
+        const compiler = childProcess.spawn(gren.compilerPath, args);
+
+        compiler.stdout.pipe(process.stdout);
+        compiler.stderr.pipe(process.stderr);
+        
+        compiler.on('exit', (code) => process.exit(code));
+    } catch (err) {
+        console.error(err);
+        process.exit(1);
+    }
+}
+
+run();
