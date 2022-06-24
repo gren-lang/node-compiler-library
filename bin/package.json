@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/gren-lang/npm#readme",
   "dependencies": {
-    "gren-compiler-library": "file:../lib/"
+    "gren-compiler-library": "0.1.0"
   }
 }
