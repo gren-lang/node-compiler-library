@@ -4,7 +4,7 @@
   "description": "The Gren compiler",
   "type": "module",
   "bin": {
-      "gren": "index.js"
+    "gren": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
