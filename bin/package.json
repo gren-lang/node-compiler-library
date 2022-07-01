@@ -1,30 +1,36 @@
 {
   "name": "gren-lang",
-  "version": "0.1.0",
-  "description": "The Gren compiler",
+  "version": "0.1.1",
+  "description": "An NPM package for installing the Gren compiler",
   "type": "module",
-  "bin": {
-    "gren": "index.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gren-lang/npm.git"
+    "url": "git+https://github.com/gren-lang/compiler.git"
   },
   "files": [
     "index.js"
   ],
+  "bin": {
+    "gren": "index.js"
+  },
   "keywords": [
-    "gren"
+    "gren",
+    "lang",
+    "language",
+    "bin",
+    "binary",
+    "install",
+    "installer"
   ],
   "author": "Robin Heggelund Hansen",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/gren-lang/npm/issues"
+    "url": "https://github.com/gren-lang/compiler/issues"
   },
-  "homepage": "https://github.com/gren-lang/npm#readme",
+  "homepage": "https://gren-lang.org",
   "dependencies": {
     "gren-compiler-library": "0.1.0"
   }
