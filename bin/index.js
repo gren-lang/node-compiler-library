@@ -8,12 +8,11 @@ import * as util from 'util'
 async function run() {
     try {
         await gren.downloadCompiler();
+        
         const args = process.argv.slice(2);
-
-        const compiler = childProcess.spawn(gren.compilerPath, args);
-
-        compiler.stdout.pipe(process.stdout);
-        compiler.stderr.pipe(process.stderr);
+        const compiler = childProcess.spawn(gren.compilerPath, args, {
+            stdio: 'inherit'
+        });
         
         compiler.on('exit', (code) => process.exit(code));
     } catch (err) {
