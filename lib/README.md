@@ -8,5 +8,5 @@ Currently not a whole lot going on in this package. Expect it to gradually impro
 
 ## API
 
-* `compilerPath`: A string containing the actual location to where the Gren compiler will be installed.
-* `downloadCompiler()`: Download the Gren compiler, if it doesn't already exist at `compilerPath`.
+- `compilerPath`: A string containing the actual location to where the Gren compiler will be installed.
+- `downloadCompiler()`: Download the Gren compiler, if it doesn't already exist at `compilerPath`.
