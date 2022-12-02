@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/gren-lang/npm#readme",
   "dependencies": {
-    "follow-redirects": "^1.15.1",
+    "follow-redirects": "^1.15.2",
     "xdg-basedir": "^5.1.0"
   }
 }
