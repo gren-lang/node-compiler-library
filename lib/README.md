@@ -2,7 +2,7 @@
 
 This package makes it easy to communicate with the Gren compiler from JavaScript.
 
-This library is compatible with Gren 0.2.0.
+This library is compatible with Gren 0.2.1.
 
 ## API
 
