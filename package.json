@@ -26,7 +26,9 @@
     "url": "https://github.com/gren-lang/node-compiler-library/issues"
   },
   "homepage": "https://github.com/gren-lang/node-compiler-library#readme",
-  "dependencies": {},
+  "dependencies": {
+    "gren-lang": "file:../compiler"
+  },
   "devDependencies": {
     "prettier": "^2.8.0"
   }

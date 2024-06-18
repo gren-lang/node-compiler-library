@@ -1,8 +1,11 @@
 import * as fs from "fs/promises";
+import * as url from "node:url";
 import * as childProcess from "child_process";
 import * as util from "util";
 
 const execFile = util.promisify(childProcess.execFile);
+
+const compilerPath = url.fileURLToPath(await import.meta.resolve("gren-lang"));
 
 /* The version of the Gren compiler that will be downloaded and used for the commands in this package */
 export const compilerVersion = "0.4.0";
@@ -14,7 +17,7 @@ export const compilerVersion = "0.4.0";
  * `options` allow you to set environment variables and a timeout (milliseconds).
  */
 export async function execute(path, args, options) {
-  return await execFile(compilerPath, args, {
+  return await execFile(process.argv[0], [compilerPath].concat(args), {
     cwd: path,
     env: options.env || {},
     timeout: options.timeout || 30_000,
