@@ -8,7 +8,7 @@ const execFile = util.promisify(childProcess.execFile);
 const compilerPath = url.fileURLToPath(await import.meta.resolve("gren-lang"));
 
 /* The version of the Gren compiler that will be downloaded and used for the commands in this package */
-export const compilerVersion = "0.4.0";
+export const compilerVersion = "0.4.1";
 
 /* Execute an arbitrary command on the Gren compiler.
  *

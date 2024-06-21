@@ -1,6 +1,6 @@
 {
   "name": "gren-compiler-library",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "The Gren compiler as a JavaScript library",
   "type": "module",
   "main": "index.js",
