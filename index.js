@@ -21,6 +21,7 @@ export async function execute(path, args, options) {
     cwd: path,
     env: options.env || {},
     timeout: options.timeout || 30_000,
+    shell: true,
   });
 }
 
