@@ -1,6 +1,6 @@
 {
   "name": "gren-compiler-library",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "The Gren compiler as a JavaScript library",
   "type": "module",
   "main": "index.js",
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/gren-lang/node-compiler-library#readme",
   "dependencies": {
-    "gren-lang": "0.4.4"
+    "gren-lang": "0.4.5"
   },
   "devDependencies": {
     "prettier": "^2.8.0"
